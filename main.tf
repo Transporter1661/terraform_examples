@@ -1,5 +1,3 @@
-# We strongly recommend using the required_providers block to set the
-# Azure Provider source and version being used
 terraform {
   required_providers {
     azurerm = {
@@ -9,14 +7,14 @@ terraform {
   }
 }
 
-# Configure the Microsoft Azure Provider
+
 provider "azurerm" {
   features {}
 
-  /*subscription_id = "a355c32e-4a22-4b05-aab4-be236850fa6e"
+  subscription_id = "a355c32e-4a22-4b05-aab4-be236850fa6e"
   client_id       = "0e036733-8fb5-4204-85c1-5736abe677e7"
   client_secret   = "7ZdW7o.b.q_7VLcJhavua09b6K_68tzr3i"
-  tenant_id       = "9085ff8c-8807-4ff8-a403-ea470525cda6"*/
+  tenant_id       = "9085ff8c-8807-4ff8-a403-ea470525cda6"
 }
 
 #create resource group
